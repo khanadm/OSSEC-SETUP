@@ -13,7 +13,7 @@ OSSEC is easy to use and provides a high level of system surveillance for a smal
 
 
 
-# Before moving forward, you must have installed Postfix on your server to receive alert emails in your Gmail.
+# Before moving forward, you must have Postfix installed on your server to receive alert in your Gmail.
 
 
 
