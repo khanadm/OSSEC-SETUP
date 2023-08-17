@@ -6,10 +6,10 @@ OSSEC is easy to use and provides a high level of system surveillance for a smal
 
 **OSSEC provides several functions**
 
-* Real time log monitoring.
+* Real-time log monitoring.
 * File integrity checking - detects changes to files and system paths.
-* Changes to the system / running services (netstat) / disk space / password file changes.
-* Real time blocking of detected attacks through firewall rule modification.
+* Changes to the system/running services (netstat) / disk space/password file changes.
+* Real-time blocking of detected attacks through firewall rule modification.
 
 
 
@@ -22,7 +22,7 @@ OSSEC is easy to use and provides a high level of system surveillance for a smal
 
 
 **Step 1:** Install Postfix
-In the first step install Postfix on your Ubuntu system. You can do this by running following command −
+In the first step install Postfix on your Ubuntu system. You can do this by running the following command −
 
 
 
@@ -31,11 +31,12 @@ sudo apt install postfix
 ```
 
 
-During installation, you will be prompted to select mail server configuration and there options. You should choose "Internet Site" and fill your server's domain name when ask.
+During installation, you will be prompted to select mail server configuration and there options. You should choose "Internet Site" and fill in your server's domain name when asked.
 
 
 
-![Setect mail server configuation](<Screenshot from 2023-08-17 11-39-29.png>)
+![Setect mail server configuation](https://github.com/khanadm/OSSEC-SETUP/assets/106643382/af14f124-7efa-4e62-bc8c-721048d8cffa "Setect mail server configuation")
+
 
 
 **Step 2:** Configure Postfix
@@ -64,7 +65,7 @@ Save and exit the file.
 
 
 **Step 3:** Create a Gmail App Password
-To use Gmail as a relay server, you need to create an App Password in Gmail configuration. This password is use to authenticate Gmail's servers for relaing emails. To create an App Password, you can follow these steps −
+To use Gmail as a relay server, you need to create an App Password in Gmail configuration. This password is used to authenticate Gmail's servers for relaying emails. To create an App Password, you can follow these steps −
 
 * Log in to your Gmail account.
 
@@ -114,7 +115,7 @@ sudo systemctl restart postfix
 
 
 Step 6: Test the Configuration
-To test configuration, send an email using the "mail" commans, and replace "recipient@email.com" with the email address you want to send the email to −
+To test the configuration, send an email using the "mail" command, and replace "recipient@email.com" with the email address you want to send the email to −
 
 ```
 echo "Test email" | mail -s "Test subject" recipient@email.com
@@ -324,7 +325,8 @@ If you want to Decrease or Increase the timing for blocking period you can chang
 
 
 
-![OSSEC BLOCK FOR 600 secs](<OSSEC BLOCK FOR 600 secs.png>)
+![OSSEC BLOCK FOR 600 secs](https://github.com/khanadm/OSSEC-SETUP/assets/106643382/9b1be38b-0bb4-4493-99a8-04f153e24539 "OSSEC BLOCK FOR 600 secs")
+
 
 
 
